@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="DD">
+        <meta name="DDS" content="width=device-width, initial-scale=1.0">
+        <link  rel="stylesheet" href="style.css">
+        <link rel="icon" href="/539-5390374_electrician-logos-clip-art.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+        <title>Моя страничка</title>
+    </head>
+    <body>  
+        <div class="firsttext">
+            <video autoplay muted loop>
+                <!-- <source src="-106886.mp4" type="video/mp4"> -->
+            </video>
+            <h2>Начало всего</h2>
+        </div>
+        <div class="main">
+            <div class="text-main">
+             <img class="first" src="Picsart_23-02-16_22-14-01-196.png" alt="pics">
+             <h2>Достон Б.</h2>
+             <p>Начинающий программист</p>
+            </div> 
+        </div>
+        <section id="trip">
+            <section class="places">
+                <h1>Куда бы я хотел поехать</h1>
+                <div class="container">
+                    <div class="card">
+                        <span></span>
+                        <div class="imgbx"><img src="япония.jpg" alt="pic"></div>
+                        <div class="content">
+                            <div> 
+                             <h2>Япония</h2>
+                             <p>Япония – одно из самых развитых государств мира с тысячелетней историей, самобытной культурой и традициями. Это страна контрастов: возделывающей рис сельской глубинки и многомиллионного Токио, буддистских монахов и одержимых модой тинейджеров.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span></span>
+                        <div class="imgbx"><img src="корея.jpg" alt="pic"></div>
+                        <div class="content">
+                            <div>
+                             <h2>Корея</h2>
+                             <p>Южная Корея – так обычно называют красивую, процветающую и самобытную страну, расположившуюся на восточной окраине Азии, в южной части Корейского полуострова. Официальное же название государства – Республика Корея.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span></span>
+                        <div class="imgbx"><img src="ВК.jpg" alt="pic"></div>
+                        <div class="content">
+                            <div>
+                             <h2>Великобритания</h2>
+                             <p>Великобритания — остров, на котором расположены три региона Соединенного Королевства: Англия, Уэльс и Шотландия.Соединенное Королевство Великобритании и Северной Ирландии — состоящая из четырех регионов: три из них на острове Великобритания.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </section>
+        </section>
+        <footer>
+            <a href="/end/about.html" target="_blank">Хочешь узнать больше?</a>
+            <p>
+                <a href="#">Вернуться на верх</a>
+            </p>
+        </footer>               
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                $('.card').on('mouseenter', function(e){
+                 x = e.pageX - $(this).offset().left,
+                 y = e.pageY - $(this).offset().top;
+                 $(this).find('span').css({top:y, left:x})
+                })
+                $('.card').on('mouseout', function(e){
+                 x = e.pageX - $(this).offset().left,
+                 y = e.pageY - $(this).offset().top;
+                 $(this).find('span').css({top:y, left:x})
+                })
+            })
+        </script> 
+</html>
